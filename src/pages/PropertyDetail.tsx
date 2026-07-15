@@ -402,3 +402,204 @@ export default function PropertyDetail() {
                     </form>
                   )}
                 </div>
+{/* Property Summary */}
+                <div className="glass-panel p-6 rounded-lg">
+                  <h3 className="font-display text-sm text-gold tracking-luxe uppercase mb-4">Property Summary</h3>
+                  <dl className="space-y-3 text-sm font-body">
+                    <div className="flex justify-between">
+                      <dt className="text-muted-foreground">Type</dt>
+                      <dd className="text-foreground/80">{property.type}</dd>
+                    </div>
+                    <div className="flex justify-between">
+                      <dt className="text-muted-foreground">Bedrooms</dt>
+                      <dd className="text-foreground/80">{property.bedrooms}</dd>
+                    </div>
+                    <div className="flex justify-between">
+                      <dt className="text-muted-foreground">Bathrooms</dt>
+                      <dd className="text-foreground/80">{property.bathrooms}</dd>
+                    </div>
+                    <div className="flex justify-between">
+                      <dt className="text-muted-foreground">Interior</dt>
+                      <dd className="text-foreground/80">{property.sqm} sqm</dd>
+                    </div>
+                    <div className="flex justify-between">
+                      <dt className="text-muted-foreground">Lot Size</dt>
+                      <dd className="text-foreground/80">{property.lotSize}</dd>
+                    </div>
+                    <div className="flex justify-between">
+                      <dt className="text-muted-foreground">Year Built</dt>
+                      <dd className="text-foreground/80">{property.yearBuilt}</dd>
+                    </div>
+                    <div className="flex justify-between">
+                      <dt className="text-muted-foreground">Location</dt>
+                      <dd className="text-foreground/80">{property.location}</dd>
+                    </div>
+                  </dl>
+                </div>
+
+                {/* QR Code Section */}
+                <div className="glass-panel p-6 rounded-lg text-center">
+                  <h3 className="font-display text-sm text-gold tracking-luxe uppercase mb-4">Property QR Code</h3>
+                  <div className="w-32 h-32 mx-auto bg-foreground/5 border border-gold/20 rounded-lg flex items-center justify-center mb-3">
+                    <div className="grid grid-cols-8 gap-px w-24 h-24">
+                      {Array.from({ length: 64 }).map((_, i) => (
+                        <div
+                          key={i}
+                          className={cn(
+                            (i % 3 === 0 || i % 5 === 0 || i % 7 === 0 || i < 8 || i > 55) ? "bg-gold" : "bg-transparent"
+                          )}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-[10px] text-muted-foreground font-body">
+                    Scan to share this property
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PRIVATE ACCESS SECTION */}
+      <section className="py-16 bg-gradient-to-b from-charcoal to-charcoal-light">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center gap-2 px-4 py-2 border border-gold/30 text-gold text-xs tracking-luxe uppercase font-body mb-4">
+                <Lock className="w-3.5 h-3.5" />
+                Private Buyer Section
+              </div>
+              <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">
+                For Qualified Buyers Only
+              </h2>
+              <p className="text-sm text-muted-foreground font-body max-w-xl mx-auto">
+                {property.privateInfo.qualificationRequirements}
+              </p>
+            </div>
+
+            {!privateUnlocked ? (
+              <div className="glass-panel p-8 rounded-lg max-w-md mx-auto">
+                <form onSubmit={handlePrivateAccess} className="space-y-4">
+                  <div>
+                    <label className="text-[10px] tracking-luxe text-gold/70 uppercase font-body block mb-2">
+                      Access Password
+                    </label>
+                    <input
+                      type="password"
+                      value={privatePassword}
+                      onChange={(e) => setPrivatePassword(e.target.value)}
+                      placeholder="Enter password"
+                      className="w-full bg-charcoal-lighter border border-gold/15 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-gold/50 focus:outline-none font-body"
+                    />
+                    <p className="text-[10px] text-muted-foreground/60 font-body mt-2">
+                      Hint: {property.privateInfo.passwordHint}
+                    </p>
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full gold-gradient text-charcoal font-body text-sm font-semibold tracking-wide-luxe uppercase py-3 hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+                  >
+                    <Shield className="w-4 h-4" />
+                    Unlock Private Documents
+                  </button>
+                </form>
+              </div>
+            ) : (
+              <div className="glass-panel p-8 rounded-lg animate-scale-in">
+                <div className="flex items-center gap-2 text-gold mb-6">
+                  <Shield className="w-5 h-5" />
+                  <span className="text-sm tracking-wide-luxe uppercase font-body">Access Granted</span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {property.privateInfo.documents.map((doc) => (
+                    <div
+                      key={doc}
+                      className="flex items-center gap-3 p-4 bg-charcoal-lighter border border-gold/10 hover:border-gold/30 transition-colors cursor-pointer group"
+                    >
+                      <FileText className="w-5 h-5 text-gold/60 group-hover:text-gold transition-colors flex-shrink-0" />
+                      <span className="text-sm text-foreground/80 font-body flex-1">{doc}</span>
+                      <ArrowRight className="w-4 h-4 text-gold/40 group-hover:text-gold group-hover:translate-x-1 transition-all" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* SIMILAR PROPERTIES */}
+      {similarProperties.length > 0 && (
+        <section className="py-24">
+          <div className="container mx-auto px-6">
+            <h2 className="font-display text-2xl md:text-3xl text-foreground mb-10">
+              Similar Properties
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {similarProperties.map((p, i) => (
+                <PropertyCard key={p.id} property={p} index={i} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* GALLERY LIGHTBOX */}
+      {galleryOpen && (
+        <div className="fixed inset-0 z-[80] bg-charcoal/98 flex items-center justify-center">
+          <button
+            onClick={() => setGalleryOpen(false)}
+            className="absolute top-6 right-6 w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-charcoal transition-all z-10"
+            aria-label="Close gallery"
+          >
+            ✕
+          </button>
+          <div className="relative w-full h-full flex items-center justify-center px-16">
+            <img
+              src={galleryImages[activeImage]}
+              alt={`${property.title} ${activeImage + 1}`}
+              className="max-w-full max-h-full object-contain"
+            />
+            {activeImage > 0 && (
+              <button
+                onClick={() => setActiveImage(activeImage - 1)}
+                className="absolute left-6 w-12 h-12 rounded-full border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-charcoal transition-all"
+                aria-label="Previous image"
+              >
+                <ChevronDown className="w-5 h-5 rotate-90" />
+              </button>
+            )}
+            {activeImage < galleryImages.length - 1 && (
+              <button
+                onClick={() => setActiveImage(activeImage + 1)}
+                className="absolute right-6 w-12 h-12 rounded-full border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-charcoal transition-all"
+                aria-label="Next image"
+              >
+                <ChevronDown className="w-5 h-5 -rotate-90" />
+              </button>
+            )}
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-gold/70 text-sm font-body">
+              {activeImage + 1} / {galleryImages.length}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function SpecItem({ icon: Icon, label, value }: { icon: any; label: string; value: string }) {
+  return (
+    <div className="flex flex-col items-center text-center md:flex-row md:items-center gap-3">
+      <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
+        <Icon className="w-5 h-5 text-gold" />
+      </div>
+      <div>
+        <div className="text-[10px] tracking-wide-luxe text-muted-foreground uppercase font-body">{label}</div>
+        <div className="font-display text-sm text-foreground">{value}</div>
+      </div>
+    </div>
+  );
+}
