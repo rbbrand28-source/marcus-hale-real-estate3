@@ -333,4 +333,4 @@ export const properties: Property[] = [
       'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=1600&q=85',
     ],
     description: 'A two-floor vertical mansion in the new Meridian Tower, featuring a private internal elevator, sky garden, and dual-kitchen configuration.',
-    longDescription: 'The Meridian Tower Mansion redefines high-rise living by combining the space and privacy of a ground-level mansion with the security and views of a tower residence. Occupying the 35th and 36th floors, the home is connected by a private glass elevator and internal staircase. The lower floor is dedicated to entertaining — a grand salon, formal dining room, and chef\'s kitchen with 
+    longDescription: 'The Meridian Tower Mansion redefines high-rise living by combining the space and privacy of a ground-level mansion with the security and views of a tower residence. Occupying the 35th and 36th floors, the home is connected by a private glass elevator and internal staircase. The lower floor is dedicated to entertaining — a grand salon, formal dining room, and chef\'s kitchen with' 
