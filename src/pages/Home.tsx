@@ -435,20 +435,68 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "2026 Luxury Market Trends in Monteverde Bay", 
-              category: "Market Analysis", 
-              date: "Jan 8, 2026" 
-            },
-            { 
-              title: "The Art of Discreet Transactions", 
-              category: "Industry Insight", 
-              date: "Nov 22, 2026" 
-            },
-          ]}
-        />
-      </div>
+              { title: "2026 Luxury Market Trends in Monteverde Bay", category: "Market Analysis", date: "Jan 8, 2026", image: "https://images.unsplash.com/photo-1600304550793-2c7f1c5e5c5e?w=1600&q=85", slug: "2026-luxury-market-trends-monteverde-bay" },
+              { title: "The Art of Discreet Transactions", category: "Industry Insight", date: "Nov 22, 2025", image: "https://images.unsplash.com/photo-1600598547878-4976f5e9e5c3?w=1600&q=85", slug: "art-of-discreet-transactions" },
+              { title: "Sustainable Luxury: The Future", category: "Lifestyle", date: "Aug 5, 2025", image: "https://images.unsplash.com/photo-1600210492486-748fe5b5a9d8?w=1600&q=85", slug: "sustainable-luxury-future" },
+            ].map((article, i) => (
+              <Link
+                key={i}
+                to={`/insights/${article.slug}`}
+                className="group block animate-fade-in-up"
+                style={{ animationDelay: `${i * 0.1}s` }}
+              >
+                <article className="bg-charcoal-light overflow-hidden hover-lift">
+                  <div className="relative aspect-[16/10] overflow-hidden">
+                    <img
+                      src={article.image}
+                      alt={article.title}
+                      loading="lazy"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent" />
+                    <span className="absolute top-4 left-4 px-3 py-1 bg-charcoal/80 backdrop-blur-sm text-gold text-[10px] tracking-wide-luxe uppercase font-body">
+                      {article.category}
+                    </span>
+                  </div>
+                  <div className="p-6">
+                    <div className="text-xs text-muted-foreground font-body mb-3">{article.date}</div>
+                    <h3 className="font-display text-lg text-foreground mb-3 group-hover:text-gold transition-colors leading-snug">
+                      {article.title}
+                    </h3>
+                    <span className="text-gold text-xs tracking-wide-luxe uppercase font-body flex items-center gap-2 group-hover:gap-3 transition-all">
+                      Read Article <ArrowRight className="w-3.5 h-3.5" />
+                    </span>
+                  </div>
+                </article>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section className="relative py-32 overflow-hidden">
+        <div className="absolute inset-0 gold-gradient opacity-95" />
+        <div className="absolute inset-0 bg-charcoal/40" />
+        <div className="relative container mx-auto px-6 text-center">
+          <div className="max-w-2xl mx-auto">
+            <Eye className="w-8 h-8 text-charcoal mx-auto mb-6" />
+            <h2 className="font-display text-3xl md:text-5xl text-charcoal leading-tight mb-6">
+              Begin Your Private Journey
+            </h2>
+            <p className="text-lg text-charcoal/80 font-body mb-10 leading-relaxed">
+              Schedule a confidential consultation with Marcus Hale. Discover properties that exist beyond the public market.
+            </p>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-3 px-10 py-4 bg-charcoal text-gold font-body text-sm font-semibold tracking-wide-luxe uppercase hover:bg-charcoal-light transition-colors"
+            >
+              Request Private Consultation
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
-};
-
-export default Home;
+}
