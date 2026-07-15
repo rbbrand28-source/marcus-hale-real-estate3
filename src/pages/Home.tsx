@@ -435,5 +435,20 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "2026 Luxury Market Trends in Monteverde Bay", category: "Market Analysis", date: "Jan 8, 2026", image: "https://images.unsplash.com/photo-1600304550793-2c7f1c5e5c5e?w=1600&q=85", slug: "2026-luxury-market-trends-monteverde-bay" },
-              { title: "The Art of Discreet Transactions", category: "Industry Insight", date: "Nov 22, 
+              { title: "2026 Luxury Market Trends in Monteverde Bay", 
+              category: "Market Analysis", 
+              date: "Jan 8, 2026" 
+            },
+            { 
+              title: "The Art of Discreet Transactions", 
+              category: "Industry Insight", 
+              date: "Nov 22, 2026" 
+            },
+          ]}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Home;
