@@ -13,7 +13,7 @@ const heroSlides = [
   "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1920&q=80",
   "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80",
   "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=90",
-  "https://images.unsplash.com/photo-1613492392455-1f1e6e5f1c3a?w=1920&q=90",
+  "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1920&q=80",
 ];
 
 export default function Home() {
