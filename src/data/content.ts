@@ -236,10 +236,10 @@ export const properties: Property[] = [
     heroImage: 'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=1920&q=85',
     galleryImages: [
       'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=1600&q=85',
-      'https://images.unsplash.com/photo-1600585154526-990dced4db0f?w=1600&q=85',
+      'https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1600&q=85',
       'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1600&q=85',
-      'https://images.unsplash.com/photo-1600598547878-4976f5e9e5c3?w=1600&q=85',
-      'https://images.unsplash.com/photo-1600210492486-748fe5b5a9d8?w=1600&q=85',
+      'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1600&q=85',
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&q=85',
       'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=85',
     ],
     description: 'An off-market modernist chateau with a glass atrium, formal gardens, and a climate-controlled wine cellar holding 3,000 bottles.',
