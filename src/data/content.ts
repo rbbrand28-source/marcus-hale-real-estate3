@@ -102,10 +102,10 @@ export const properties: Property[] = [
     galleryImages: [
       'https://i.ibb.co/8gngdx5K/pexels-luizavenanci-29334668.jpg',
       'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=85',
-      'https://unsplash.com/photos/inside-condominium-unit-cHjAxnJk_wQ',
+      'content://media/external/downloads/1000017449',
       'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=85',
       'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1600&q=85',
-      'https://unsplash.com/photos/a-bedroom-with-a-spiral-staircase-in-the-corner-h30xW8X5CP4',
+      'content://media/external/downloads/1000017448',
     ],
     description: 'A sculptural waterfront villa with panoramic ocean views, private beach access, and architectural significance that rivals the world\'s finest residences.',
     longDescription: 'Azure Horizon Villa is a triumph of contemporary architecture, where every line and surface is designed to frame the horizon. Spanning 1,450 square meters across three levels, the residence cascades down the cliffside in a series of cantilevered terraces that dissolve the boundary between interior and exterior. Floor-to-ceiling glass walls retract seamlessly, inviting the ocean breeze and golden light into every room. The infinity pool appears to merge with the sea beyond, creating an optical phenomenon that must be experienced to be understood. Designed by the acclaimed architect Soren Lindqvist, this is not merely a home — it is a meditation on the relationship between luxury and nature.',
