@@ -526,7 +526,7 @@ export const articles: Article[] = [
     author: 'Marcus Hale',
     date: 'January 8, 2026',
     readTime: '12 min read',
-    image: 'https://images.unsplash.com/photo-1600304550793-2c7f1c5e5c5e?w=1600&q=85',
+    image: 'https://i.ibb.co/Yz5zCJ8/grok-1784353956323-2.jpg',
     tags: ['Market Trends', 'Investment', 'Monteverde Bay', '2026'],
     content: [
       'The ultra-luxury real estate market in Monteverde Bay enters 2026 with remarkable momentum. After three consecutive years of sustained appreciation, the market shows no signs of cooling — rather, it is maturing in ways that present both opportunities and considerations for high-net-worth buyers and sellers.',
