@@ -546,7 +546,7 @@ export const articles: Article[] = [
     author: 'Marcus Hale',
     date: 'December 15, 2025',
     readTime: '18 min read',
-    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0f?w=1600&q=85',
+    image: 'https://i.ibb.co/0jS6Sz8c/grok-1784356295516-2.jpg',
     tags: ['Investment', 'Guide', 'Strategy', 'Portfolio'],
     content: [
       'Ultra-luxury real estate occupies a unique position in the investment landscape. It is simultaneously a lifestyle asset — a place to live, to entertain, to build memories — and a financial asset with appreciation potential, tax implications, and portfolio considerations. Navigating this duality requires a framework that honors both dimensions.',
