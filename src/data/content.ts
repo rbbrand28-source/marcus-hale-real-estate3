@@ -625,7 +625,7 @@ export const articles: Article[] = [
     author: 'Marcus Hale',
     date: 'August 5, 2025',
     readTime: '9 min read',
-    image: 'https://images.unsplash.com/photo-1600210492486-748fe5b5a9d8?w=1600&q=85',
+    image: 'https://i.ibb.co/08Z10w7/grok-1784356767621-2.jpg',
     tags: ['Sustainability', 'Future', 'Smart Home', 'Lifestyle'],
     content: [
       'The intersection of sustainability and luxury was once seen as a contradiction. Today, it is the defining frontier of ultra-luxury real estate. The most sophisticated buyers, architects, and developers are demonstrating that environmental responsibility and extraordinary living are not just compatible — they are mutually reinforcing.',
