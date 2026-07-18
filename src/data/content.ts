@@ -188,9 +188,9 @@ export const properties: Property[] = [
     offMarket: false,
     hasVirtualTour: true,
     hasDroneFootage: true,
-    heroImage: 'Photo by Max Vakhtbovych from Pexels: https://www.pexels.com/photo/brown-and-white-wooden-house-under-blue-sky-8134847/',
+    heroImage: 'https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1920',
     galleryImages: [
-      'Photo by Max Vakhtbovych from Pexels: https://www.pexels.com/photo/brown-and-white-wooden-house-under-blue-sky-8134847/',
+      'https://images.pexels.com/photos/8134847/pexels-photo-8134847.jpeg?auto=compress&cs=tinysrgb&w=1920',
       'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=85',
       'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1600&q=85',
       'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=85',
