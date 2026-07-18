@@ -98,9 +98,9 @@ export const properties: Property[] = [
     offMarket: false,
     hasVirtualTour: true,
     hasDroneFootage: true,
-    heroImage: 'https://canva.link/wak6lt1onoy39ou',
+    heroImage: 'https://ibb.co/GQfQtM2x',
     galleryImages: [
-      'https://canva.link/wak6lt1onoy39ou',
+      'https://ibb.co/GQfQtM2x',
       'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=85',
       'https://images.unsplash.com/photo-1600598547878-4976f5e9e5c3?w=1600&q=85',
       'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=85',
