@@ -435,9 +435,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "2026 Luxury Market Trends in Monteverde Bay", category: "Market Analysis", date: "Jan 8, 2026", image: "https://images.unsplash.com/photo-1600304550793-2c7f1c5e5c5e?w=1600&q=85", slug: "2026-luxury-market-trends-monteverde-bay" },
-              { title: "The Art of Discreet Transactions", category: "Industry Insight", date: "Nov 22, 2025", image: "https://images.unsplash.com/photo-1600598547878-4976f5e9e5c3?w=1600&q=85", slug: "art-of-discreet-transactions" },
-              { title: "Sustainable Luxury: The Future", category: "Lifestyle", date: "Aug 5, 2025", image: "https://images.unsplash.com/photo-1600210492486-748fe5b5a9d8?w=1600&q=85", slug: "sustainable-luxury-future" },
+              { title: "2026 Luxury Market Trends in Monteverde Bay", category: "Market Analysis", date: "Jan 8, 2026", image: "https://i.ibb.co/Yz5zCJ8/grok-1784353956323-2.jpg", slug: "2026-luxury-market-trends-monteverde-bay" },
+              { title: "The Art of Discreet Transactions", category: "Industry Insight", date: "Nov 22, 2025", image: "https://i.ibb.co/DP0khp6C/grok-1784356470242-2.jpg", slug: "art-of-discreet-transactions" },
+              { title: "Sustainable Luxury: The Future", category: "Lifestyle", date: "Aug 5, 2025", image: "https://i.ibb.co/08Z10w7/grok-1784356767621-2.jpg", slug: "sustainable-luxury-future" },
             ].map((article, i) => (
               <Link
                 key={i}
