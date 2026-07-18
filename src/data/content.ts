@@ -98,9 +98,9 @@ export const properties: Property[] = [
     offMarket: false,
     hasVirtualTour: true,
     hasDroneFootage: true,
-    heroImage: 'https://ibb.co/GQfQtM2x',
+    heroImage: 'https://i.ibb.co/8gngdx5K/pexels-luizavenanci-29334668.jpg',
     galleryImages: [
-      'https://ibb.co/GQfQtM2x',
+      'https://i.ibb.co/8gngdx5K/pexels-luizavenanci-29334668.jpg',
       'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=85',
       'https://unsplash.com/photos/inside-condominium-unit-cHjAxnJk_wQ',
       'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=85',
