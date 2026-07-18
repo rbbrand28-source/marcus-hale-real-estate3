@@ -567,7 +567,7 @@ export const articles: Article[] = [
     author: 'Marcus Hale',
     date: 'November 22, 2025',
     readTime: '10 min read',
-    image: 'https://images.unsplash.com/photo-1600598547878-4976f5e9e5c3?w=1600&q=85',
+    image: 'https://i.ibb.co/DP0khp6C/grok-1784356470242-2.jpg',
     tags: ['Off-Market', 'Discretion', 'Transactions', 'Strategy'],
     content: [
       'In the ultra-luxury market, the most significant transactions are often the ones you never hear about. Off-market deals — properties that are sold without public listing, marketing, or signage — constitute an estimated 35-45% of all ultra-luxury transactions. Understanding how this market works is essential for both buyers and sellers.',
