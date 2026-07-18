@@ -645,10 +645,10 @@ export const marcusBio = {
   yearsExperience: 18,
   clientCount: '120+',
   offMarketDeals: '40% of transactions',
-  portraitImage: 'https://images.unsplash.com/photo-1560250097-0b93528c312a?w=1600&q=85',
+  portraitImage: 'https://i.ibb.co/ZzJgvwSL/grok-1784357179833-2.jpg',
   lifestyleImages: [
-    'https://images.unsplash.com/photo-1560472354-b33ff0c94a86?w=1600&q=85',
-    'https://images.unsplash.com/photo-1573496359142-b8d87734f5a7?w=1600&q=85',
+    'https://i.ibb.co/rK3HJwyp/pexels-artbovich-7174105.jpg',
+    'https://i.ibb.co/sdZ0qSms/pexels-the-ghazi-2152398165-33747726.jpg',
   ],
   bio: [
     'Marcus Hale is not a real estate agent. He is an advisor, a confidant, and a curator of extraordinary living. For nearly two decades, he has operated at the intersection of wealth, architecture, and aspiration — guiding the world\'s most discerning clients to properties that reflect not just their means, but their vision.',
